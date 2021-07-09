@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+    <h1>Form Filling</h1>
+    <!--type-1-->
+    <h2>basic form</h2>
+<form>
+    <p>
+        UserName:
+        <input type="text" name="UserName" placeholder="Enter your UserName">
+    </p>
+    <p>
+        Password:
+        <input type="text" name="password" placeholder="Enter your Password">
+    </p>
+</form>
+<!--type-2-->
+<form>
+    <h2>size ,length</h2>
+    <!--size maxlength-->
+    <p>
+        UserName:
+        <input type="text" name="UserName" placeholder="Enter your UserName" size="15"  maxlength="10">
+    </p>
+    <p>
+        Password:
+        <input type="text" name="password" placeholder="Enter your Password" size="15" maxlength="10">
+    </p>
+</form>
+<h2>value ,submit </h2>
+<form>
+    <p>
+        UserName: <br>
+        <input type="text" name="UserName" placeholder="Enter your UserName" size="15" maxlength="10" value="dinesh">
+    </p>
+    <p>
+        Password: <br>
+        <input type="password" name="password" placeholder="Enter your Password" size="15" maxlength="10" value="dinezhbitan"> <br><br>
+        <input type="submit" value="send" name="login-button">
+    </p>
+</form>
+<!-- method has GET  value but, it work normaly it dont hide  the data so, here we go for post -->
+<!-- action has name of password username verifing fill name -->
+<form method="POST" action=" ">
+    <p>
+        UserName: <br>
+        <input type="text" name="UserName" placeholder="Enter your UserName" size="15" maxlength="10" >
+    <p>
+        Password: <br>
+        <input type="password" name="password" placeholder="Enter your Password" size="15" maxlength="10" > <br><br>
+        <input type="submit" value="send" name="login-button">
+    </p>
+
+</form>
+
+
+</body>
+</html>
